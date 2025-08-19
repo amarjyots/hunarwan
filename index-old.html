@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBSITE - GURUNG</title>
+    <title>Portal Web Template</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div id="header"></div>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
-    </script>
+    <header>
+        <h1>Portal Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section id="main-content">
