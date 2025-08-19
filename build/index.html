@@ -41,10 +41,6 @@
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Settings</a></li>
-                <li>
-                    <div id="protected-link">Confidential</div>
-                </li>
-
             </ul>
         </aside>
     </main>
@@ -54,22 +50,5 @@
     .then(response => response.text())
     .then(data => document.getElementById('footer').innerHTML = data);
 </script>
-
-                <script>
-                    // Wait until header is loaded
-                    window.addEventListener('DOMContentLoaded', function () {
-                        const password = "mypassword";
-                        const userInput = prompt("Enter password to see the link:");
-                        const protectedLink = document.getElementById('protected-link');
-                        if (protectedLink) {
-                            if (userInput === password) {
-                                protectedLink.innerHTML = '<a href="secret.html">Secret Page</a>';
-                            } else {
-                                protectedLink.innerHTML = 'Incorrect password.';
-                            }
-                        }
-                    });
-                </script>
-
 </body>
 </html>
