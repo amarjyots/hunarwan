@@ -1,66 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Web page structure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Web Template</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <header>
+        <h1>Portal Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<body bgcolor="yellow">
+    <main>
+        <section id="main-content">
+            <h2>Welcome to the Portal</h2>
+            <p>This is the main content area. Add your portal features and information here.</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Feature 1</h3>
+                    <p>Description of feature 1.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature 2</h3>
+                    <p>Description of feature 2.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature 3</h3>
+                    <p>Description of feature 3.</p>
+                </div>
+            </div>
+        </section>
 
-    <!--Trial of HTML text level semantics-->
-    <h3>Trial of HTML text level semantics</h3><br>
+        <aside id="sidebar">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+    </main>
 
-    <b style="font-weight:normal">This is a bold with NORMAL weight</b>
-    <strong>This is a strong</strong><br>
-    <em>This is an em / emphasis tag</em>
-    <p>This is a french fry with <i>no salt added</i></p>
-    <!----------------------------->
-
-    <!--TRIAL OF ADDING VIDEO AND AUDIO TO HTML PAGE-->
-    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls width="320" height="240">Your browser does not support the video tag.</video>
-    <!------------------------------------------------>
-
-    <!--audio trial-->
-    <audio controls>
-        <source src="https://www.w3schools.com/html/horse.ogg" />
-    </audio>
-    <!----------------------------->
-
-    <iframe src="https://www.youtube.com/embed/B1_N28DA3gY" width="600" height="400" title="MIDNIGHT RUN - CHECK" frameborder="50px" allowfullscreen></iframe>
-
-    <hr>
-    <h2><a href="index.html" alt="This is a link">LINK</a></h2>
-    <p><a href="index.html">This is a paragraph link</a></p>
-    <a href="index.html" alt="This is me"><img src="https://www.w3schools.com/images/w3schools_green.jpg"
-            alt="W3Schools.com" style="width:25%;height:25%;"></a>
-
-    <h1>Ben's site</h1>
-    <section <h1>Ben's blog</h1>
-        <p> All about what I do</p>
-    </section>
-    <article <header <h1> A post about something</h1>
-        <p>Trust me this is a great read</p>
-        <p>No not really</p>
-        <p>See I told you</p>
-        <p>Trying the BLOCKQUOTE</p>
-        <blockquote>This is a blockquote my friends
-            <blockquote>Internal blockquote</blockquote>
-        </blockquote>
-        <figure border="1" style="border: 1px solid black; padding: 10px; margin: 20px; background-color=#f4f4f4;">
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"
-                style="width:25%;height:25%;">
-            <figcaption>W3Schools.com</figcaption>
-        </figure>
-
-        <!--Trying Summary and details tag-->
-        <details>
-            <summary>This is a summary line</summary>
-            <p>It opens up the details of the summary</p>
-
-            <p>More details can be added here</p><br><br>
-        </details>
-
+    <footer>
+        <p>&copy; 2025 Portal Name. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
