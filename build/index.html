@@ -44,6 +44,17 @@
                 <li>
                     <div id="protected-link">Confidential</div>
                 </li>
+
+            </ul>
+        </aside>
+    </main>
+<div id="footer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+
                 <script>
                     // Wait until header is loaded
                     window.addEventListener('DOMContentLoaded', function () {
@@ -59,14 +70,6 @@
                         }
                     });
                 </script>
-            </ul>
-        </aside>
-    </main>
-<div id="footer"></div>
-<script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('footer').innerHTML = data);
-</script>
+
 </body>
 </html>
